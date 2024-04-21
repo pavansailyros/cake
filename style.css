@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+} 
+
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #cf596c;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 800px;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    top: 0;
+    left: 100px;
+    transition: 0.4s;
+}
+
+.container {
+    height: 200px; 
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px black;
+}
+
+.close {
+    background-color: red;
+}
+
+marquee {
+    font-size: 31px;
+    color: rgb(207, 89, 108);
+}
+
+.footer {
+    background-color: rgb(229, 160, 160);
+    color: red;
+    padding: 20px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.before {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 100%;
+    background-color: antiquewhite;
+    transition: 0.4s;
+}
+
+.after {
+    left: calc(100% - 300px);
+    height: 900px;
+    width: 500px;
+}
+
+button {
+    background-color: black;
+    color: wheat;
+    border-radius: 5px;
+}
+
+
+.before {
+    position: fixed;
+    width: 300px;
+    top: 0px;
+    right: -300px; 
+    background-color: antiquewhite;
+    transition: 0.4s;
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+}
+
+.after {
+    right: 0;
+    left: calc(100% - 300px);
+    height: 900px;
+    width: 500px;
+}
+
+.container.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container.cart-item img {
+    margin-right: 10px;
+}
+
+.container.cart-item .count {
+    margin: 0 10px;
+}
+
+.container.cart-item button {
+    background-color: black;
+    color: wheat;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.container.cart-item button:hover {
+    background-color: gray;
+}
+
+.container.cart-item button:active {
+    transform: translateY(1px);
+}
