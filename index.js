@@ -59,7 +59,7 @@
 
     function reloadCart() {
         cartContainer.innerHTML = "";
-        let total = 0; // Variable to store the total price of all items in the cart
+        let total = 0; 
         cart.forEach((value, index) => {
             if (value) {
                 let cartDiv = document.createElement("div");
@@ -73,10 +73,10 @@
                                 <button onclick="changeQuantity(${index}, ${value.quantity + 1})">+</button>
                             </div>`;
                 cartContainer.appendChild(cartDiv);
-                total += value.price * value.quantity; // Add the price of each item to the total
+                total += value.price * value.quantity; 
             }
         });
-        // Display total price
+      
         cartContainer.innerHTML += `<div><b>Total Price: ${total}rs</b></div>`;
     }
     
